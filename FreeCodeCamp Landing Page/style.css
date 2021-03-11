@@ -1,0 +1,307 @@
+:root {
+  --main: rgb(143, 122, 4);
+  --navbar: rgba(143, 122, 4, 0.8);
+  --text-brown: rgb(139, 69, 19);
+  --the-background: rgb(224, 222, 189);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: larger;
+}
+
+/* A = navbar */
+
+#header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  background: var(--navbar);
+  height: 120px;
+  box-shadow: 0px 0px 25px 5px rgb(143, 122, 4);
+  z-index: 2;
+}
+
+#header-img {
+  transform: scale(0.4);
+  margin-left: -100px;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 0px 35px;
+}
+
+.nav-link {
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #edf0f1;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-link:hover {
+  color: #3b3b16;
+}
+
+/* B = FORM&VIDEO */
+.container-form-video {
+  padding-top: 120px;
+  display: block;
+  height: 120vh;
+}
+
+#form {
+  background: rgb(224, 222, 189);
+  height: 60vh;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5%;
+  border-left: 2px solid var(--navbar);
+  border-right: 2px solid var(--navbar);
+  border-bottom: 4px solid var(--navbar);
+  box-shadow: 0px 0px 25px 0px var(--navbar);
+  z-index: -11;
+}
+
+input,
+label {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+label[for="email"] {
+  color: var(--navbar);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 15px;
+}
+
+input[placeholder="yourname@any.com"] {
+  font-size: 1.4rem;
+  background-color: rgb(247, 245, 215);
+  text-align: center;
+  padding: 7px;
+}
+
+::placeholder {
+  color: rgb(212, 208, 208);
+}
+
+#email {
+  width: 30%;
+  border: none;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(211, 206, 178);
+}
+
+input[id="submit"] {
+  margin: auto;
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: rgb(247, 245, 215);
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--text-brown);
+}
+
+#video-container {
+  position: relative;
+  height: 50vh;
+  bottom: 22%;
+  display: block;
+  width: 50%;
+  margin: auto;
+  z-index: 0;
+}
+
+#video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* C = MAIN BACKGROUND */
+
+#just-for-background {
+  background: var(--the-background);
+  box-shadow: 100px 100px 100px 300px rgb(224, 222, 189);
+}
+
+/* D = FEATURES  */
+
+#features-section {
+  max-width: 80%;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+
+.feature {
+  border: 2px solid var(--main);
+  border-radius: 10px;
+  padding: 5px;
+  width: 25%;
+  height: auto;
+}
+
+.icons,
+.hiw-icons {
+  font-size: 3rem;
+  color: var(--text-brown);
+  padding: 5px;
+}
+
+#icon-p {
+  font-size: 1.4rem;
+  font-kerning: normal;
+  color: var(--main);
+  padding: 10px;
+}
+
+#features-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--text-brown);
+  padding: 10px;
+  background: rgb(143, 122, 4, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* E = HOW IT WORKS */
+
+#howitworks-section {
+  max-width: 70%;
+  margin: auto;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+#hiw-text-main {
+  margin: auto;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-brown);
+  padding-bottom: 3%;
+}
+
+.hiw-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.howitworks {
+  padding: 20px;
+}
+
+#features-text-two {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--text-brown);
+  padding: 10px;
+  background: rgba(240, 226, 151, 0.5);
+  box-shadow: 2px 2px 35px rgba(240, 226, 151, 0.5),
+    inset 5px 5px 8px rgba(0, 0, 0, 0.5);
+  line-height: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* F = PRICING */
+
+#pricing-text-main {
+  padding-top: 15%;
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-brown);
+}
+
+#pricing-section {
+  padding: 5%;
+  max-width: 80%;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.pricing {
+  padding: 20px;
+  border: 2px solid var(--main);
+  border-radius: 10px;
+  padding: 15px;
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#pricing-title {
+  background: rgba(143, 122, 4, 0.8);
+  font-size: 1.4rem;
+  font-kerning: normal;
+  color: rgb(241, 240, 229);
+  padding: 10px;
+  flex-direction: column;
+}
+
+#money {
+  padding: 25px 0;
+}
+
+#small-text {
+  font-size: 1.2rem;
+  padding: 7px;
+  color: var(--text-brown);
+}
+
+#select {
+  background: rgba(143, 122, 4, 0.8);
+  color: rgb(240, 239, 232);
+  font-size: 1.3rem;
+  border: 1px solid rgba(143, 122, 4, 0.8);
+  width: 50%;
+  height: 40px;
+  margin: auto;
+}
+
+footer {
+  background: rgb(139, 69, 19);
+  color: white;
+  text-align: left;
+  height: 80px;
+}
+
+@media (max-width: 1100px) {
+  .nav-link {
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+}

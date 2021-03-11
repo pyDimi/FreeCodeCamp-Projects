@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b0a2a2ec3b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navigation -->
+    <header id="header">
+      <img id="header-img" src="/fakelogopng.png" alt="logo" />
+      <nav id="nav-bar">
+        <ul class="links">
+          <li class="nav-item">
+            <a class="nav-link" href="#features-section">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#howitworks-section">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing-section">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- form&video together -->
+    <div class="container-form-video">
+      <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        <label for="email">Enter Your Email </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="yourname@any.com"
+          required
+        />
+        <input type="submit" value="Submit & Join In" id="submit"></input>
+      </form>
+      <div id="video-container">
+      <video id="video" controls width="900">
+        <source src="https://youtu.be/2YBtspm8j8M" type="video/mp4" />
+      </video>
+    </div>
+    </div>
+
+    <div id="just-for-background">
+      <!-- features -->
+
+      <div id="features-section">
+        <div class="feature">
+          <i class="fas fa-book-open icons"></i>
+          <h3 id="icon-p">Always new learning material</h3>
+          <h4 id="features-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            delectus quae iusto et illum, itaque velit odit ducimus recusandae
+            amet?
+          </h4>
+        </div>
+        <div class="feature">
+          <i class="fas fa-comments icons"></i>
+          <h3 id="icon-p">24/7 personal help</h3>
+          <h4 id="features-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            dicta esse velit voluptatibus animi quas quia consequuntur adipisci
+            consectetur ullam.
+          </h4>
+        </div>
+        <div class="feature">
+          <i class="fas fa-users icons"></i>
+          <h3 id="icon-p">Learn together with your peers</h3>
+          <h4 id="features-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            amet sunt nulla officia quibusdam eos culpa cum possimus ab aperiam!
+          </h4>
+        </div>
+      </div>
+
+      <!-- how it works -->
+      <div id="howitworks-section">
+        <h2 id="hiw-text-main">It's pretty simple!</h2>
+        <div class="howitworks">
+          <i class="fas fa-calculator hiw-icons"></i>
+          <h4 id="features-text-two">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            ullam asperiores, non magni eaque labore distinctio consectetur
+            tenetur obcaecati temporibus dolor cupiditate? Impedit commodi
+            asperiores a autem quod neque animi. Optio sapiente aperiam ipsa
+            accusantium provident fuga reprehenderit architecto. Ducimus velit
+            esse odit beatae distinctio mollitia soluta inventore aut quis.
+          </h4>
+        </div>
+        <div class="howitworks">
+          <i class="fas fa-chart-bar hiw-icons"></i>
+          <h4 id="features-text-two">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            ullam asperiores, non magni eaque labore distinctio consectetur
+            tenetur obcaecati temporibus dolor cupiditate? Impedit commodi
+            asperiores a autem quod neque animi. Optio sapiente aperiam ipsa
+            accusantium provident fuga reprehenderit architecto. Ducimus velit
+            esse odit beatae distinctio mollitia soluta inventore aut quis.
+          </h4>
+        </div>
+      </div>
+
+      <!-- pricing -->
+
+      <div class="title">
+        <h2 id="pricing-text-main">Pricing</h2>
+      </div>
+      <div id="pricing-section">
+        <div class="pricing">
+          <h3 id="pricing-title">Starter Pack</h3>
+          <h2 id="money">$200</h2>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <button id="select">select</button>
+        </div>
+        <div class="pricing">
+          <h3 id="pricing-title">Pro Pack</h3>
+          <h2 id="money">$300</h2>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <h4 id="small-text">Lorem, ipsum.</h4>
+          <button id="select">select</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>Copyright 2021</footer>
+
+    <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
